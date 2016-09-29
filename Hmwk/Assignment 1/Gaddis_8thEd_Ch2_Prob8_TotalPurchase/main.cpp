@@ -7,6 +7,7 @@
 
 //System Libraries
 #include <iostream>   //Input/Output objects
+#include <iomanip>    //
 using namespace std;  //Name-space used in the System Library
 
 //User Libraries
@@ -38,9 +39,10 @@ int main(int argc, char** argv) {
     cout<<" Price of item 4           = $"<<item4<<endl;
     cout<<" Price of item             = $"<<item5<<endl;
     cout<<" The sale before taxes is"<<"  = $"<<subtotal<<endl;
-    cout<<" The tax amount is"<<"         = $"<<taxes<<endl;
-    cout<<" The Total amount is"<<"       = $"<<total<<endl;
-    
+    cout<<" The tax amount is"<<"         = $"<<setw(4)
+            <<setprecision(2)<<fixed<<taxes<<endl;
+    cout<<"The total amount is        = $"<<setw(4)<<setprecision(2)
+            <<fixed<<total<<endl;
     //Exit Program
     return 0;
 }
