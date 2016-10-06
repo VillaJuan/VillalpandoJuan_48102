@@ -37,9 +37,25 @@ int main()
         {
 		cout << "Those two colors make: Purple" << endl;
 	}
+    else if (color1 == "blue" && color2 == "red")
+        {
+		cout << "Those two colors make: Purple" << endl;
+    }
             else if (color1 == "blue" && color2 == "yellow")
 	{
 		cout << "Those two colors make: Green" << endl;
+	}
+            else if (color1 == "yellow" && color2 == "blue")
+	{
+		cout << "Those two colors make: Green" << endl;
+	}
+            else if (color1 == "red" && color2 == "yellow")
+	{
+		cout << "Those two colors make: Orange" << endl;
+	}
+            else if (color1 == "yellow" && color2 == "red")
+	{
+		cout << "Those two colors make: Orange" << endl;
 	}
             else
 	{
